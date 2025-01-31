@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7fdfc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+.left-section {
+  flex: 1;
+  padding: 40px;
+  background-color: #eef7f7;
+  text-align: center;
+}
+
+.left-section .logo {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+.left-section h1 {
+  font-size: 40;
+  font: brown;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 50px;
+  color: #000b0a;
+}
+
+.left-section p {
+  font-size: 16px;
+  font: brown;
+  font-weight: 400;
+  color: #737373;
+  line-height: 25px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 40px;
+}
+
+.form-group-pair {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+label {
+  display: block;
+  width: 238px;
+  height: 72px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Sofia Sans", "Rubik", sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #20c997;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #17a589;
+}
+
+.terms {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+}
+
+.terms a {
+  color: #20c997;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}

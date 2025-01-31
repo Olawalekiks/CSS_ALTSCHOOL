@@ -1,0 +1,76 @@
+/* General styles */
+body {
+  font-family: "Rubik", serif, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* .body {
+  font-family: Arial, sans-serif;
+  background-color: #d6d2e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+} */
+
+.card {
+  position: relative;
+  width: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: visible; /* Allow badge to overflow */
+  padding-bottom: 20px; /* Remove padding on top */
+}
+
+.card::before {
+  content: "New and Improved!";
+  position: absolute;
+  top: 10px; /* Slightly outside the card */
+  left: -20px; /* Slightly outside the card */
+  background-color: #ffc107; /* Yellow */
+  color: black;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 5px;
+  z-index: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Optional: Add shadow for a pop-out effect */
+}
+
+.card-image {
+  width: 100%; /* Stretch the image to fill the card's width */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block; /* Ensures it behaves like a block element */
+}
+
+.card-content {
+  padding: 20px; /* Add padding to content inside the card */
+}
+
+.card-content h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.card-content h2 .series {
+  font-weight: normal;
+  font-size: 16px;
+  color: gray;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  margin-top: 10px;
+}

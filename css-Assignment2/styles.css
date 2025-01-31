@@ -1,0 +1,90 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.card-subtitle {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 20px 20px 20px;
+}
+
+.card-subtitle .highlight {
+  color: #2b9348;
+  font-weight: bold;
+}
+
+.card-section {
+  background-color: #eeeeee;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 1.2rem;
+  background-color: #ffc107;
+  color: black;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 1rem;
+  color: #333;
+  margin: 10px 0 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.8rem;
+  }
+
+  .card-subtitle,
+  .section-text {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-subtitle,
+  .section-text {
+    font-size: 0.8rem;
+  }
+
+  .section-title {
+    font-size: 0.9rem;
+  }
+}

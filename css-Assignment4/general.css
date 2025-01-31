@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7fdfc;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.general-section {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.left-section {
+  flex: 1;
+  padding: 40px;
+  background-color: #eef7f7;
+  text-align: left; /* Aligns content to the left */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Moves content to the center vertically */
+}
+
+.left-section img {
+  width: 120px; /* Adjust the width as needed */
+  height: auto; /* Maintains aspect ratio */
+  /* margin-bottom: 16px; */
+}
+
+.left-section h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #000b0a;
+  font-family: brown;
+  letter-spacing: -0.8;
+  line-height: 50px;
+}
+
+.left-section p {
+  font-size: 16px;
+  color: #737373;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: brown;
+}
+
+.right-section {
+  flex: 1;
+  padding: 40px;
+}
+
+.form-group-pair {
+  display: flex;
+  gap: 40px; /* Adjusted to ensure equal spacing */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  width: 238px;
+  height: auto;
+  gap: 0px;
+  opacity: 0px;
+  font-family: "Sofia Sans", "Rubik", sans-serif;
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+label[for="activity-level"],
+label[for="password"],
+.register-btn {
+  width: auto;
+  height: auto;
+  opacity: 1;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #20c997;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-btn:hover {
+  background-color: #17a589;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.register-btn:active {
+  background-color: #158a75;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(0);
+}
+
+.terms {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  color: #666;
+}
+
+.terms a {
+  color: #20c997;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for Date of Birth Field */
+.date-of-birth-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.date-of-birth-wrapper input {
+  width: 100%;
+  /* padding: 10px 40px 10px 10px; Adjust padding to make space for the icon */
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #737373; /* Placeholder color */
+}
+
+.date-of-birth-wrapper input::placeholder {
+  color: #737373;
+}
+
+.date-of-birth-wrapper svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #ccc; /* Icon color */
+  pointer-events: none; /* Ensures the icon doesn't block clicks on the input */
+}
+
+input::placeholder,
+select::placeholder {
+  color: #737373;
+  opacity: 1; /* Ensures the placeholder color appears as defined */
+}
